@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DomainStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="SYS_USER">
+      <EntityTypeMapping TypeName="Domain.SYS_USER">
+        <MappingFragment StoreEntitySet="SYS_USER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ACCOUNT" ColumnName="ACCOUNT" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="ISCANLOGIN" ColumnName="ISCANLOGIN" />
+          <ScalarProperty Name="SHOWORDER1" ColumnName="SHOWORDER1" />
+          <ScalarProperty Name="SHOWORDER2" ColumnName="SHOWORDER2" />
+          <ScalarProperty Name="PINYIN1" ColumnName="PINYIN1" />
+          <ScalarProperty Name="PINYIN2" ColumnName="PINYIN2" />
+          <ScalarProperty Name="FACE_IMG" ColumnName="FACE_IMG" />
+          <ScalarProperty Name="LEVELS" ColumnName="LEVELS" />
+          <ScalarProperty Name="DPTID" ColumnName="DPTID" />
+          <ScalarProperty Name="CREATEPER" ColumnName="CREATEPER" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="UPDATEUSER" ColumnName="UPDATEUSER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="LastLoginIP" ColumnName="LastLoginIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

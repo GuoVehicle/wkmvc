@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Domain" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="SYS_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ACCOUNT" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PASSWORD" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ISCANLOGIN" Type="Int32" />
+    <Property Name="SHOWORDER1" Type="Int32" />
+    <Property Name="SHOWORDER2" Type="Int32" />
+    <Property Name="PINYIN1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PINYIN2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FACE_IMG" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="LEVELS" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Name="DPTID" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Name="CREATEPER" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATEUSER" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="LastLoginIP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SYS_USER" EntityType="Self.SYS_USER" />
+  </EntityContainer>
+</Schema>
